@@ -47,7 +47,6 @@ body {
     /* Taille fixe pour l'image, elle ne change pas même si l'écran grandit */
     width: 80px; 
     height: 80px;
-    border: 2px solid #333;
     flex-shrink: 0; /* Empêche l'image de rétrécir */
     
 
@@ -64,8 +63,9 @@ body {
     min-height: 80px; /* S'aligne sur la hauteur de l'image */
 }
 
-.content-area p, .sub-box {
+.content-area p, .sub-box, .content-area ul li {
     border: 2px solid #333;
+    border-radius: 5px;
     padding: 10px;
     width: 100%;
     /* Pour que le texte prenne bien toute la largeur dans sa boite */
@@ -91,6 +91,10 @@ body {
     border: 2px solid #2c3e50; 
 }
 
+
+
+
+
 /* --- Petit ajustement Mobile (Media Query) --- */
 /* Si l'écran est très petit (téléphone), on réduit un peu les marges */
 @media (max-width: 600px) {
@@ -108,4 +112,6 @@ body {
     .content-area {
         min-height: 60px;
     }
+
+    
 }
