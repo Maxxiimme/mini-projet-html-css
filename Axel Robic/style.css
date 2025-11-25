@@ -1,18 +1,18 @@
 * { margin: 0; padding: 0; box-sizing: border-box;}
 
 #logoIUTToulouse {
-width=83;
-height=50;
+	width:83px;
+	height:50px;
 }
 
  #logoUnivPaulSab{
-width=50;
-height=50;
+	width:50px;
+	height:50px;
  }
  
  #logoBUTInfo {
-width=43;
-height=50;
+	width:43px;
+	height:50px;
  }
  
 header {
