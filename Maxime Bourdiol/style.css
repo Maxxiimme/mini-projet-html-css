@@ -1,0 +1,239 @@
+
+/* 1. STYLES GÉNÉRAUX & LAYOUT */
+
+.but-pres {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Remplace 'main' */
+.but-pres-conteneur {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-sizing: border-box; /* Important pour l'intégration */
+}
+
+/* --- Typographie Spécifique --- */
+
+/* Remplace h1.haut */
+.but-pres-titre-principal {
+    color: #CC0000;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 0;
+    font-size: 2em;
+}
+
+/* Remplace h2 */
+.but-pres-titre-secondaire {
+    color: #CC0000;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 1em 0;
+}
+
+/* Remplace h3 */
+.but-pres-titre-tertiaire {
+    color: #CC0000;
+    padding-bottom: 10px;
+    margin: 1em 0 0.5em 0;
+    font-size: 1.17em;
+}
+
+/* Remplace les liens 'a' */
+.but-pres-lien {
+    color: #CC0000;
+    text-decoration: none;
+}
+
+.but-pres-lien:hover {
+    text-decoration: underline;
+}
+
+/* Images */
+.but-pres-img-responsive {
+    max-width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+/* 2. SECTION HAUTE (Texte + Tableau) */
+.but-pres-partie-haute {
+    display: flex;
+    gap: 2em; /* Ajusté pour éviter les débordements */
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.but-pres-texte-gauche {
+    flex: 2;
+}
+
+.but-pres-zone-tableau {
+    flex: 6;
+}
+
+/* --- Styles du Tableau Unique --- */
+.but-pres-tableau {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.but-pres-tableau th, 
+.but-pres-tableau td {
+    border: 1px solid #cccccc;
+    padding: 0.5em;
+    text-align: center;
+}
+
+/* En-tête rouge */
+.but-pres-tableau thead tr {
+    background-color: #ce5454;
+    color: #ffffff;
+}
+
+.but-pres-tableau th {
+    border-color: #ce5454;
+}
+
+/* Lignes alternées */
+.but-pres-tableau tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Première colonne alignée à gauche */
+.but-pres-tableau td:first-child {
+    text-align: left;
+}
+
+/* Séparateur rouge */
+.but-pres-separateur {
+    margin: 2em auto;
+    border: none;
+    height: 2px;
+    background-color: #ce5454;
+    width: 100%;
+}
+
+/* 3. COMPÉTENCES */
+.but-pres-bloc-competence {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Inverse l'ordre image/texte 1 fois sur 2 */
+.but-pres-bloc-competence:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.but-pres-bloc-image-link {
+    flex: 1;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1em;
+    background-color: #fff; /* Au cas où l'image ne charge pas */
+}
+/* Correction du padding pour le mode inversé */
+.but-pres-bloc-competence:nth-child(even) .but-pres-bloc-image-link {
+    padding-right: 0;
+    padding-left: 1em;
+}
+
+.but-pres-bloc-contenu {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+/* --- Grille des ressources --- */
+.but-pres-liste-ressources {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.but-pres-ressource-item {
+    border: 2px solid #628bc9;
+    color: #628bc9;
+    font-weight: bold;
+    border-radius: 7px;
+    padding: 2em 10px;
+    text-align: center;
+    background-color: #ffffff;
+    transition: all 0.2s ease;
+    cursor: default;
+}
+
+.but-pres-ressource-item:hover {
+    background-color: #628bc9;
+    color: #ffffff;
+}
+
+/* 4. RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+    .but-pres-partie-haute {
+        flex-direction: column;
+        gap: 2em;
+        align-items: center;
+    }
+    
+    .but-pres-texte-gauche {
+        width: 100%;
+        text-align: justify;
+    }
+
+    /* Tableau scrollable */
+    .but-pres-zone-tableau {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .but-pres-tableau {
+        min-width: 600px;
+    }
+    
+    .but-pres-tableau th, 
+    .but-pres-tableau td {
+        font-size: 0.9em;
+        padding: 0.3em;
+    }
+
+    /* Colonne unique pour les compétences */
+    .but-pres-bloc-competence, 
+    .but-pres-bloc-competence:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .but-pres-bloc-image-link {
+        width: 100%;
+        min-height: 200px;
+        padding: 0 !important; /* Force suppression du padding desktop */
+    }
+    
+    .but-pres-img-responsive {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .but-pres-liste-ressources {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
