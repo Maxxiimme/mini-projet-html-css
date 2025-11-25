@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - BUT Informatique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <div class="logos-left">
+                <img src="./img/logo-IUT-toulouse.png" alt="IUT Toulouse" id="logoIUTToulouse">
+                <img src="./img/logo-univ-PaulSab.jpg" alt="Université Paul Sabatier" id="logoUnivPaulSab">
+            </div>
+            <div class="logo-right">
+                <img src="./img/logo-BUT-informatique.png" alt="BUT Informatique" id="logoBUTInfo">
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="presentation.html">Présentation du BUT</a></li>
+                <li>
+                    <a href="#">Compétences &#9660;</a>
+                    <ul class="sous">
+                        <li><a href="competence1.html">C1: Développement</a></li>
+                        <li><a href="competence2.html">C2: Optimisation</a></li>
+                        <li><a href="competence3.html">C3: Administration</a></li>
+                        <li><a href="competence4.html">C4: Données</a></li>
+                        <li><a href="competence5.html">C5: Gestion Projet</a></li>
+                        <li><a href="competence6.html">C6: Équipe</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Contactez-nous</h1>
+
+        <section class="contact-container">
+            <form>
+                <div class="form-column">
+                    <input type="text" placeholder="Prénom" required>
+                    <input type="text" placeholder="Nom" required>
+                    <input type="email" placeholder="Adresse mail" required>
+                    <button type="button" class="btn-fake">Envoyer</button>
+                </div>
+                <div class="form-column">
+                    <textarea placeholder="Votre message..."></textarea>
+                </div>
+            </form>
+
+            <div class="home-block" style="margin-top:40px; align-items: center;">
+                
+                <div class="home-img-container" style="width:50%; min-width:300px;">
+                    <img src="./img/Photo_iut.jpeg" alt="Photo de l'IUT">
+                </div>
+
+                <div class="home-content">
+                    <h3>Nos Coordonnées</h3>
+                    <p>Adresse de l’IUT : 133B Avenue de Rangueil, 31400 Toulouse</p>
+                    
+                    <div>
+                        <img src="./img/carte-iut.png" alt="Carte Localisation" >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-section">
+            <h4>Plan du site</h4>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="presentation.html">Présentation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div id="rgpd-link"><a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees">CNIL - RGPD</a></div>
+        <div class="footer-section" id="ownerFooter">
+            <h4>Groupe C n°2</h4>
+            <ul>
+                <li>Malo Tranier</li>
+                <li>Maxim Bourdiol</li>
+                <li>Lucas Da Silva-Inacio</li>
+                <li>Mohamed-Karim</li>
+                <li>Axel Robic</li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

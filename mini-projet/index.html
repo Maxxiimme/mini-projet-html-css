@@ -1,8 +1,180 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>web</title>
-  <link rel="stylesheet" href="monstyle.css">
- 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - BUT Informatique</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <div class="logos-left">
+                <img src="./img/logo-IUT-toulouse.png" alt="IUT Toulouse" id="logoIUTToulouse">
+                <img src="./img/logo-univ-PaulSab.jpg" alt="Université Paul Sabatier" id="logoUnivPaulSab">
+            </div>
+            <div class="logo-right">
+                <img src="./img/logo-BUT-informatique.png" alt="BUT Informatique" id="logoBUTInfo">
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="presentation.html">Présentation du BUT</a></li>
+                <li>
+                    <a href="#">Compétences &#9660;</a>
+                    <ul class="sous">
+                        <li><a href="competence1.html">C1: Développement</a></li>
+                        <li><a href="competence2.html">C2: Optimisation</a></li>
+                        <li><a href="competence3.html">C3: Administration</a></li>
+                        <li><a href="competence4.html">C4: Données</a></li>
+                        <li><a href="competence5.html">C5: Gestion Projet</a></li>
+                        <li><a href="competence6.html">C6: Équipe</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Bienvenue au BUT Informatique</h1>
+
+        <div class="home-block">
+            <div class="home-img-container">
+                <img src="./img/BUT.png" alt="Logo BUT">
+            </div>
+            <div class="home-content">
+                <h3>Le BUT Informatique</h3>
+                <p>Depuis septembre 2021, le BUT (Bachelor Universitaire de Technologie) est devenu le nouveau diplôme de référence des IUT. C'est un diplôme en 3 ans (niveau Bac+3 / 180 crédits ECTS). Il s'inscrit dans le cadre des licences professionnelles. <a href="https://fr.wikipedia.org/wiki/Bachelor_universitaire_de_technologie" target="_blank">[Source Wikipédia]</a></p>
+            </div>
+        </div>
+
+        <div class="home-block">
+            <div class="home-img-container">
+                <a href="https://iut-informatique.univ-tlse3.fr/">
+                    <img src="./img/IUT.jpg" alt="Photo IUT">
+                </a>
+            </div>
+            <div class="home-content">
+                <h3>IUT de Toulouse - Département Informatique</h3>
+                <p><strong>Événements :</strong> Salon Infosup (Janvier), Journées Portes Ouvertes.</p>
+                <ul>
+                    <li>133 B, Avenue de Rangueil, 31077 TOULOUSE</li>
+                    <li>Secrétariat : 05 62 25 87 61</li>
+                    <li>Email : contact.info@iut-tlse3.fr</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="home-block" style="display:block;">
+            <h3 style="margin-bottom:15px; text-align:center;">Aperçu des Compétences</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="./img/Réaliser_un_développement_dapplication.jpeg" alt="Dev">
+                    <div>
+                        <strong>C1 : Réaliser</strong>
+                        <br><small>R1.01: Init. dev,
+R1.02: Web,
+R1.10: Anglais</small>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <img src="./img/Optimiser_des_applications.jpeg" alt="Opti">
+                    <div>
+                        <strong>C2 : Optimiser</strong>
+                        <br><small>R1.01: Init. au dev,
+R1.03: Intro. archi,
+R1.04: Intro. systèmes,
+R1.06: Maths discrètes,
+R1.07: Outils fond</small>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <img src="./img/Administrer_des_systèmes_informatiques_communicants_complexes.jpeg" alt="Admin">
+                    <div>
+                        <strong>C3 : Administrer</strong>
+                        <br><small>R1.03: Intro. archi,
+R1.04: Intro. systèmes,
+R1.10: Anglais,
+R1.11: Bases comm</small>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <img src="./img/Gérer_des_données.jpeg" alt="Data">
+                    <div>
+                        <strong>C4 : Gérer</strong>
+                        <br><small>1.05: Introduction BD,
+R1.06: Maths discrètes,
+R1.09: Economie,
+SAÉ 1.02</small>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <img src="./img/Conduire_un_projet.jpeg" alt="Projet">
+                    <div>
+                        <strong>C5 : Conduire</strong>
+                        <br><small>R1.08: Gestion proj,
+R1.11: Bases comm,
+SAÉ 1.06,
+P1.01: Portfolio</small>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <img src="./img/collaborer.jpeg" alt="Team">
+                    <div>
+                        <strong>C6 : Collaborer</strong>
+                        <br><small>R1.02: Dev. interfaces web
+R1.08: Gestion proj,
+R1.09: Economie,
+R1.10: Anglais,
+R1.11: Bases comm,
+R1.12: PPP</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-block">
+            <div class="home-content">
+                <h3>Vie Étudiante</h3>
+                <p>Le campus offre de nombreuses activités sportives et culturelles. Profitez des infrastructures de l'Université Paul Sabatier pour enrichir votre vie étudiante au-delà des cours.</p>
+            </div>
+            <div class="home-img-container">
+                <a href="https://www.univ-tlse3.fr/campus/sport">
+                    <img src="./img/sportU.jpg" alt="Sport Universitaire">
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-section">
+            <h4>Plan du site</h4>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="presentation.html">Présentation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div id="rgpd-link">
+            <a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" target="_blank">Mentions Légales - CNIL RGPD</a>
+        </div>
+
+        <div class="footer-section" id="ownerFooter">
+            <h4>Groupe C n°2</h4>
+            <ul>
+                <li>Malo Tranier</li>
+                <li>Maxim Bourdiol</li>
+                <li>Lucas Da Silva-Inacio</li>
+                <li>Mohamed-Karim</li>
+                <li>Axel Robic</li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
